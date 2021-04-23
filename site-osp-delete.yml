@@ -1,4 +1,7 @@
-- hosts: workstation
+
+- name: delete osp servers
+  hosts: workstation
+  gather_facts: false
   become: yes
   roles:
     - osp-instance-delete
